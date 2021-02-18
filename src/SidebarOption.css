@@ -17,6 +17,9 @@
 .sidebarOption > .MuiSvgIcon-root{
     padding: 5px;
 }
+.sidebarOption__active > p{
+    display: inline !important;
+}
 
 .sidebarOption > h3{
     flex: 1;
@@ -27,8 +30,16 @@
 
 .sidebarOption:hover,
 .sidebarOption:hover > p,
-.sidebarOption:hover > h3{
+.sidebarOption:hover > h3,
+.sidebarOption__active,
+.sidebarOption__active > p,
+.sidebarOption__active > h3{
     background-color: #fcecec;
     color: #c04b37;
     font-weight: 800 !important;
+
+}
+
+.sidebarOption:hover > p{
+    display: inline;
 }
